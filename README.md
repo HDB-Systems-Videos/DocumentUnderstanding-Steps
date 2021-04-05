@@ -1,2 +1,2 @@
 # Taxonomy
-Taxonomy sample
+The workflow up to the Taxonomy step
