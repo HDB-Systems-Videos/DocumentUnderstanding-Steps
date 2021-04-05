@@ -1,2 +1,2 @@
 # Taxonomy
-The workflow up to the Taxonomy step
+The workflow up to the "Taxonomy" step
