@@ -1,2 +1,2 @@
-# Taxonomy
-Taxonomy sample
+# Digitization
+The workflow up to the "Digitization" part
