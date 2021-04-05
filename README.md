@@ -1,2 +1,2 @@
 # Digitization
-The workflow up to the "Digitization" part
+The workflow up to the "Digitization" step
