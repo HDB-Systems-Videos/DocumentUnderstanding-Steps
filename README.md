@@ -1,2 +1,2 @@
 # Classification
-The workflow up to the "Classification" part
+The workflow up to the "Classification" step
