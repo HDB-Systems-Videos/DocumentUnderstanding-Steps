@@ -1,2 +1,2 @@
-# Digitization
-The workflow up to the "Digitization" part
+# Classification
+The workflow up to the "Classification" part
