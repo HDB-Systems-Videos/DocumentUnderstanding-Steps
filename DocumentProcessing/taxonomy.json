@@ -1,73 +1,7 @@
 ﻿{
   "DataContractVersion": "1.1",
-  "DocumentTypes": [
-    {
-      "DocumentTypeId": "Bills.Gas.CEG",
-      "Group": "Bills",
-      "Category": "Gas",
-      "Name": "CEG",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "Bills.Gas.CEG.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "Bills.Gas.CEG.due-date",
-          "FieldName": "due-date",
-          "IsMultiValue": false,
-          "Type": "Date",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": [
-            {
-              "Key": "RequiresReference",
-              "Value": "true"
-            }
-          ]
-        },
-        {
-          "FieldId": "Bills.Gas.CEG.total",
-          "FieldName": "total",
-          "IsMultiValue": false,
-          "Type": "Number",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": [
-            {
-              "Key": "RequiresReference",
-              "Value": "true"
-            }
-          ]
-        },
-        {
-          "FieldId": "Bills.Gas.CEG.bill-number",
-          "FieldName": "bill-number",
-          "IsMultiValue": false,
-          "Type": "Number",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": [
-            {
-              "Key": "RequiresReference",
-              "Value": "true"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "Groups": [
-    {
-      "Name": "Bills",
-      "Categories": [
-        "Gas"
-      ]
-    }
-  ],
+  "DocumentTypes": [],
+  "Groups": [],
   "SupportedLanguages": [
     {
       "Name": "Undetermined Language",

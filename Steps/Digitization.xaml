@@ -89,6 +89,8 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Digitization" sap:VirtualizedContainerService.HintSize="376,516" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -104,7 +106,7 @@
           <ActivityFunc.Argument>
             <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
           </ActivityFunc.Argument>
-          <p2:UiPathDocumentOCR Output="{x:Null}" Text="{x:Null}" ApiKey="[in_Config(&quot;ApiKey&quot;).ToString]" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" Endpoint="[in_Config(&quot;Endpoint&quot;).ToString]" ExtractWords="True" sap:VirtualizedContainerService.HintSize="312,22" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_1" Image="[Image]" Language="auto" Profile="None" Scale="1" />
+          <p2:UiPathDocumentOCR Output="{x:Null}" Text="{x:Null}" ApiKey="[in_Config(&quot;OCRApiKey&quot;).ToString]" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" Endpoint="[in_Config(&quot;OCREndpoint&quot;).ToString]" ExtractWords="True" sap:VirtualizedContainerService.HintSize="312,22" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_1" Image="[Image]" Language="auto" Profile="None" Scale="1" />
         </ActivityFunc>
       </p1:DigitizeDocument.OCREngine>
     </p1:DigitizeDocument>
