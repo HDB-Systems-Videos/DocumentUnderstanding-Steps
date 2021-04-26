@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Classification" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/document-processing-contracts/dom" xmlns:p1="http://schemas.uipath.com/workflow/activities/document-processing-contracts/taxonomy" xmlns:p2="http://schemas.uipath.com/workflow/activities/document-processing-contracts/results" xmlns:p3="http://schemas.uipath.com/workflow/activities/intelligentocr/classification" xmlns:p4="http://schemas.uipath.com/workflow/activities/documentunderstanding-ml" xmlns:p5="http://schemas.uipath.com/workflow/activities/document-processing-contracts/classification" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Classification" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/document-processing-contracts/dom" xmlns:p1="http://schemas.uipath.com/workflow/activities/document-processing-contracts/taxonomy" xmlns:p2="http://schemas.uipath.com/workflow/activities/document-processing-contracts/results" xmlns:p3="http://schemas.uipath.com/workflow/activities/intelligentocr/classification" xmlns:p4="http://schemas.uipath.com/workflow/activities/documentunderstanding-ml" xmlns:p5="http://schemas.uipath.com/workflow/activities/document-processing-contracts/classification" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_File" Type="InArgument(x:String)" />
     <x:Property Name="in_Text" Type="InArgument(x:String)" />
@@ -25,7 +25,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>719,853</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>742,853</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Classification_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -99,7 +99,6 @@
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Classification" sap:VirtualizedContainerService.HintSize="520,688" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -111,12 +110,17 @@
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Classifying document...&quot;]" />
     <p3:ClassifyDocumentScope ClassificationResults="[out_ClassificationResults]" DisplayName="Classify Document Scope" DocumentObjectModel="[in_Dom]" DocumentPath="[in_File]" DocumentText="[in_Text]" sap:VirtualizedContainerService.HintSize="478,465" sap2010:WorkflowViewState.IdRef="ClassifyDocumentScope_1" Taxonomy="[in_Taxonomy]" TaxonomyConfiguration="{}{&quot;TaxonomyMappings&quot;:{&quot;UId851b38d33c7451fa2761a3c494285f8&quot;:{&quot;DocumentTypeMappings&quot;:{&quot;Bills.Gas.CEG&quot;:{&quot;OriginalDocumentTypeId&quot;:&quot;Bills.Gas.CEG&quot;,&quot;ClassifierDocumentTypeId&quot;:&quot;\&quot;ceg\&quot;&quot;,&quot;IsDocumentTypeIdMapped&quot;:true}}}},&quot;ClassifierMinimumConfidence&quot;:{&quot;UId851b38d33c7451fa2761a3c494285f8&quot;:&quot;0&quot;},&quot;DocumentTypesByPersistenceId&quot;:{&quot;UId851b38d33c7451fa2761a3c494285f8&quot;:[&quot;ceg&quot;,&quot;light&quot;,&quot;tim&quot;]}}">
       <p3:ClassifyDocumentScope.Classifiers>
-        <p4:MachineLearningClassifier SelectedMLSkill="{x:Null}" ApiKey="[in_Config(&quot;DUApiKey&quot;).ToString]" Configuration="{}{&quot;Endpoint&quot;:&quot;&quot;,&quot;ApiKey&quot;:&quot;Bg/j2d0Lk7pr5GilhBvVIaaPVPE9Yq74oQnlR9aydPPWSwVsS647uXEQQDhh9RL9aofkfaH4QTiUUYJzhkMODQ==&quot;,&quot;SelectedMLSkill&quot;:&quot;Skill_InvoicesBR&quot;,&quot;AvailableMLSkills&quot;:[&quot;Skill_ExtDueDateString&quot;,&quot;Skill_InvoicesBR&quot;]}" DisplayName="Machine Learning Classifier" sap:VirtualizedContainerService.HintSize="234,144" sap2010:WorkflowViewState.IdRef="MachineLearningClassifier_1" PersistenceId="UId851b38d33c7451fa2761a3c494285f8" RetryOnFailure="True" Timeout="100000">
+        <p4:MachineLearningClassifier Configuration="{}{&quot;Endpoint&quot;:&quot;&quot;,&quot;ApiKey&quot;:&quot;&quot;,&quot;SelectedMLSkill&quot;:&quot;Skill_InvoicesBR&quot;,&quot;AvailableMLSkills&quot;:[&quot;Skill_ExtDueDateString&quot;,&quot;Skill_InvoicesBR&quot;]}" DisplayName="Machine Learning Classifier" sap:VirtualizedContainerService.HintSize="234,144" sap2010:WorkflowViewState.IdRef="MachineLearningClassifier_1" PersistenceId="UId851b38d33c7451fa2761a3c494285f8" RetryOnFailure="True" SelectedMLSkill="Skill_InvoicesBR" Timeout="100000">
+          <p4:MachineLearningClassifier.ApiKey>
+            <InArgument x:TypeArguments="x:String">
+              <Literal x:TypeArguments="x:String" Value="" />
+            </InArgument>
+          </p4:MachineLearningClassifier.ApiKey>
           <p4:MachineLearningClassifier.AvailableMLSkills>
-            <scg:List x:TypeArguments="x:String" Capacity="2">
+            <sc:BindingList x:TypeArguments="x:String" AllowEdit="True" AllowNew="False" AllowRemove="True" RaiseListChangedEvents="True">
               <x:String>Skill_ExtDueDateString</x:String>
-              <x:String>Skill_UploaderDemo</x:String>
-            </scg:List>
+              <x:String>Skill_InvoicesBR</x:String>
+            </sc:BindingList>
           </p4:MachineLearningClassifier.AvailableMLSkills>
           <p4:MachineLearningClassifier.ClassifierResult>
             <OutArgument x:TypeArguments="p5:ClassifierResult">
