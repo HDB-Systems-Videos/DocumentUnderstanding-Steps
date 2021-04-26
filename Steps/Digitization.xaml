@@ -14,7 +14,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>719,681</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>742,681</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Digitization_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
