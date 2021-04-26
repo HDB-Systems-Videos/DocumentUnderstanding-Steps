@@ -1,2 +1,2 @@
-# Classification
-The workflow up to the "Classification" step
+# Data Extraction
+The workflow up to the "Data Extraction" step
