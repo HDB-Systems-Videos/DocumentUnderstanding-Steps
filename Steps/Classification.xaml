@@ -110,12 +110,7 @@
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Classifying document...&quot;]" />
     <p3:ClassifyDocumentScope ClassificationResults="[out_ClassificationResults]" DisplayName="Classify Document Scope" DocumentObjectModel="[in_Dom]" DocumentPath="[in_File]" DocumentText="[in_Text]" sap:VirtualizedContainerService.HintSize="478,465" sap2010:WorkflowViewState.IdRef="ClassifyDocumentScope_1" Taxonomy="[in_Taxonomy]" TaxonomyConfiguration="{}{&quot;TaxonomyMappings&quot;:{&quot;UId851b38d33c7451fa2761a3c494285f8&quot;:{&quot;DocumentTypeMappings&quot;:{&quot;Bills.Gas.CEG&quot;:{&quot;OriginalDocumentTypeId&quot;:&quot;Bills.Gas.CEG&quot;,&quot;ClassifierDocumentTypeId&quot;:&quot;\&quot;ceg\&quot;&quot;,&quot;IsDocumentTypeIdMapped&quot;:true}}}},&quot;ClassifierMinimumConfidence&quot;:{&quot;UId851b38d33c7451fa2761a3c494285f8&quot;:&quot;0&quot;},&quot;DocumentTypesByPersistenceId&quot;:{&quot;UId851b38d33c7451fa2761a3c494285f8&quot;:[&quot;ceg&quot;,&quot;light&quot;,&quot;tim&quot;]}}">
       <p3:ClassifyDocumentScope.Classifiers>
-        <p4:MachineLearningClassifier Configuration="{}{&quot;Endpoint&quot;:&quot;&quot;,&quot;ApiKey&quot;:&quot;&quot;,&quot;SelectedMLSkill&quot;:&quot;Skill_InvoicesBR&quot;,&quot;AvailableMLSkills&quot;:[&quot;Skill_ExtDueDateString&quot;,&quot;Skill_InvoicesBR&quot;]}" DisplayName="Machine Learning Classifier" sap:VirtualizedContainerService.HintSize="234,144" sap2010:WorkflowViewState.IdRef="MachineLearningClassifier_1" PersistenceId="UId851b38d33c7451fa2761a3c494285f8" RetryOnFailure="True" SelectedMLSkill="Skill_InvoicesBR" Timeout="100000">
-          <p4:MachineLearningClassifier.ApiKey>
-            <InArgument x:TypeArguments="x:String">
-              <Literal x:TypeArguments="x:String" Value="" />
-            </InArgument>
-          </p4:MachineLearningClassifier.ApiKey>
+        <p4:MachineLearningClassifier ApiKey="{x:Null}" Configuration="{}{&quot;Endpoint&quot;:&quot;&quot;,&quot;ApiKey&quot;:&quot;&quot;,&quot;SelectedMLSkill&quot;:&quot;Skill_InvoicesBR&quot;,&quot;AvailableMLSkills&quot;:[&quot;Skill_ExtDueDateString&quot;,&quot;Skill_InvoicesBR&quot;]}" DisplayName="Machine Learning Classifier" sap:VirtualizedContainerService.HintSize="234,144" sap2010:WorkflowViewState.IdRef="MachineLearningClassifier_1" PersistenceId="UId851b38d33c7451fa2761a3c494285f8" RetryOnFailure="True" SelectedMLSkill="Skill_InvoicesBR" Timeout="100000">
           <p4:MachineLearningClassifier.AvailableMLSkills>
             <sc:BindingList x:TypeArguments="x:String" AllowEdit="True" AllowNew="False" AllowRemove="True" RaiseListChangedEvents="True">
               <x:String>Skill_ExtDueDateString</x:String>
@@ -124,35 +119,35 @@
           </p4:MachineLearningClassifier.AvailableMLSkills>
           <p4:MachineLearningClassifier.ClassifierResult>
             <OutArgument x:TypeArguments="p5:ClassifierResult">
-              <DelegateArgumentReference x:TypeArguments="p5:ClassifierResult">
+              <DelegateArgumentReference x:TypeArguments="p5:ClassifierResult" sap2010:WorkflowViewState.IdRef="DelegateArgumentReference`1_1">
                 <DelegateOutArgument x:TypeArguments="p5:ClassifierResult" Name="ClassificationResult" />
               </DelegateArgumentReference>
             </OutArgument>
           </p4:MachineLearningClassifier.ClassifierResult>
           <p4:MachineLearningClassifier.DocumentObjectModel>
             <InArgument x:TypeArguments="p:Document">
-              <DelegateArgumentValue x:TypeArguments="p:Document">
+              <DelegateArgumentValue x:TypeArguments="p:Document" sap2010:WorkflowViewState.IdRef="DelegateArgumentValue`1_2">
                 <DelegateInArgument x:TypeArguments="p:Document" Name="DocumentObjectModel" />
               </DelegateArgumentValue>
             </InArgument>
           </p4:MachineLearningClassifier.DocumentObjectModel>
           <p4:MachineLearningClassifier.DocumentPath>
             <InArgument x:TypeArguments="x:String">
-              <DelegateArgumentValue x:TypeArguments="x:String">
+              <DelegateArgumentValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="DelegateArgumentValue`1_3">
                 <DelegateInArgument x:TypeArguments="x:String" Name="DocumentPath" />
               </DelegateArgumentValue>
             </InArgument>
           </p4:MachineLearningClassifier.DocumentPath>
           <p4:MachineLearningClassifier.DocumentText>
             <InArgument x:TypeArguments="x:String">
-              <DelegateArgumentValue x:TypeArguments="x:String">
+              <DelegateArgumentValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="DelegateArgumentValue`1_1">
                 <DelegateInArgument x:TypeArguments="x:String" Name="DocumentText" />
               </DelegateArgumentValue>
             </InArgument>
           </p4:MachineLearningClassifier.DocumentText>
           <p4:MachineLearningClassifier.DocumentTypes>
             <InArgument x:TypeArguments="p5:ClassifierDocumentType[]">
-              <DelegateArgumentValue x:TypeArguments="p5:ClassifierDocumentType[]">
+              <DelegateArgumentValue x:TypeArguments="p5:ClassifierDocumentType[]" sap2010:WorkflowViewState.IdRef="DelegateArgumentValue`1_4">
                 <DelegateInArgument x:TypeArguments="p5:ClassifierDocumentType[]" Name="DocumentTypes" />
               </DelegateArgumentValue>
             </InArgument>

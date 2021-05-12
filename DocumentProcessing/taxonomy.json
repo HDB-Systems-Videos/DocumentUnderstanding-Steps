@@ -46,7 +46,7 @@
           "FieldId": "Bills.Gas.CEG.bill-number",
           "FieldName": "bill-number",
           "IsMultiValue": false,
-          "Type": "Number",
+          "Type": "Text",
           "DeriveFieldsFormat": "",
           "Components": [],
           "SetValues": [],

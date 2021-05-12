@@ -1,2 +1,2 @@
-# Data Extraction
-The workflow up to the "Data Extraction" step
+# Data Exportation
+The workflow up to the "Data Exportation" step
