@@ -119,35 +119,35 @@
           </p4:MachineLearningClassifier.AvailableMLSkills>
           <p4:MachineLearningClassifier.ClassifierResult>
             <OutArgument x:TypeArguments="p5:ClassifierResult">
-              <DelegateArgumentReference x:TypeArguments="p5:ClassifierResult" sap2010:WorkflowViewState.IdRef="DelegateArgumentReference`1_1">
+              <DelegateArgumentReference x:TypeArguments="p5:ClassifierResult">
                 <DelegateOutArgument x:TypeArguments="p5:ClassifierResult" Name="ClassificationResult" />
               </DelegateArgumentReference>
             </OutArgument>
           </p4:MachineLearningClassifier.ClassifierResult>
           <p4:MachineLearningClassifier.DocumentObjectModel>
             <InArgument x:TypeArguments="p:Document">
-              <DelegateArgumentValue x:TypeArguments="p:Document" sap2010:WorkflowViewState.IdRef="DelegateArgumentValue`1_2">
+              <DelegateArgumentValue x:TypeArguments="p:Document">
                 <DelegateInArgument x:TypeArguments="p:Document" Name="DocumentObjectModel" />
               </DelegateArgumentValue>
             </InArgument>
           </p4:MachineLearningClassifier.DocumentObjectModel>
           <p4:MachineLearningClassifier.DocumentPath>
             <InArgument x:TypeArguments="x:String">
-              <DelegateArgumentValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="DelegateArgumentValue`1_3">
+              <DelegateArgumentValue x:TypeArguments="x:String">
                 <DelegateInArgument x:TypeArguments="x:String" Name="DocumentPath" />
               </DelegateArgumentValue>
             </InArgument>
           </p4:MachineLearningClassifier.DocumentPath>
           <p4:MachineLearningClassifier.DocumentText>
             <InArgument x:TypeArguments="x:String">
-              <DelegateArgumentValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="DelegateArgumentValue`1_1">
+              <DelegateArgumentValue x:TypeArguments="x:String">
                 <DelegateInArgument x:TypeArguments="x:String" Name="DocumentText" />
               </DelegateArgumentValue>
             </InArgument>
           </p4:MachineLearningClassifier.DocumentText>
           <p4:MachineLearningClassifier.DocumentTypes>
             <InArgument x:TypeArguments="p5:ClassifierDocumentType[]">
-              <DelegateArgumentValue x:TypeArguments="p5:ClassifierDocumentType[]" sap2010:WorkflowViewState.IdRef="DelegateArgumentValue`1_4">
+              <DelegateArgumentValue x:TypeArguments="p5:ClassifierDocumentType[]">
                 <DelegateInArgument x:TypeArguments="p5:ClassifierDocumentType[]" Name="DocumentTypes" />
               </DelegateArgumentValue>
             </InArgument>

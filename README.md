@@ -1,2 +1,2 @@
 # Data Exportation
-The workflow up to the "Data Exportation" step
+The workflow up to the "Train Classifier" step
